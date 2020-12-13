@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/cart_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sample_one"/>
+        <TextView
+            android:id="@+id/cart_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@fonts/hammersmith_regular.ttf"
+            android:textSize="30dp"
+            android:text="California"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@fonts/hammersmith_regular.ttf"
+            android:textSize="20dp"
+            android:text="80 USD"/>
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/black"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+    </LinearLayout>
+</LinearLayout>

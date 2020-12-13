@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/rv_food_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_image"
+        android:padding="1dp"
+        android:src="@drawable/sample_1"
+        android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+        <TextView
+            android:id="@+id/rv_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@fonts/hammersmith_regular.ttf"
+            android:text="Hawaiian"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/rv_food_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@fonts/hammersmith.ttf"
+            android:text="Chicken, Mozerilla, Pineapple, Domino's sauce"
+            android:textSize="15dp"
+            android:textColor="@color/lite_grey"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rv_food_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200 grams, 35cm"
+                android:textSize="15dp"
+                android:fontFamily="@fonts/hammersmith.ttf"
+                android:layout_weight=".5"
+                android:layout_gravity="center"
+                android:textColor="@color/lite_grey"
+                />
+            <Button
+                android:id="@+id/rv_food_addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="10dp"
+                android:text="Add"
+                android:backgroundTint="@color/button_bg_color"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
